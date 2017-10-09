@@ -1,0 +1,18 @@
+{
+  "name": "Get pages source",
+  "version": "2.0",
+  "manifest_version": 2,
+  "description": "Get pages source from a popup",
+  "browser_action": {
+    "default_popup": "popup.html"
+  },
+    /*
+    "content_scripts": [
+    {
+      "matches": ["http://*.google.com/*", "http://*.facebook.com/*"],
+      "js": ["change.js"],
+      "all_frames": true
+    }],
+    */
+  "permissions": ["tabs", "<all_urls>"]
+}
