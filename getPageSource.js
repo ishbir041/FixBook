@@ -4,6 +4,32 @@
 function DOMtoString(document_root) {
     var html = '',
         node = document_root.firstChild;
+    
+    
+    
+    /*Varnit Edit */
+    
+    var status=document.getElementsByClassName("_1mwp navigationFocus _395 _1mwq _4c_p _5bu_ _17nh _34nd _21mu _5yk1");
+    alert(status[0]['innerText'])   //This displays the status, we have to implement NLTK on this, working on this
+                                    //Haven't made any significant progress.
+
+    var allposts = document.getElementsByClassName("_5pbx userContent _3576");
+    alert(allposts.length)
+
+    var i;
+
+    for(i=0;i<allposts.length;i++){
+
+        var inner=allposts[i].getElementsByTagName("p");  //Get each post
+
+        console.log(inner[0]["innerText"]);  //Displays the post content
+
+        //change HTML for posts with objectionable words in content -- TO WRITE
+
+    }
+    
+    /*End Varnit Edit*/
+    
     //var comm=document_root.getElementsByClassName("UFICommentBody");
     //alert(comm.length)
     var tmp;
