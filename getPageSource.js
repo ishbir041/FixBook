@@ -30,6 +30,8 @@ function DOMtoString(document_root) {
     
     /*End Varnit Edit*/
     
+
+    
     //var comm=document_root.getElementsByClassName("UFICommentBody");
     //alert(comm.length)
     var tmp;
