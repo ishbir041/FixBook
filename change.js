@@ -1,5 +1,5 @@
     
-  // doesnt work right now  
+// doesnt work right now  
 function change()
 {
     var tmp;

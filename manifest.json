@@ -1,7 +1,7 @@
 {
   "name": "FixBook",
   "version": "0.0",
-  "manifest_version": 2,
+  "manifest_version": 1,
   "description": "Provide security nudges and hide malicious content on facebook",
   "browser_action": {
     "default_popup": "popup.html"
