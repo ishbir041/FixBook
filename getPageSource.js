@@ -4,19 +4,20 @@
 function DOMtoString(document_root) {
     var html = '',
         node = document_root.firstChild;
-    
+
+    //var f = new Firebase('https://psosmapp.firebaseio.com/');
+
     console.log("***New Script Start Point***")
     
-    var badWords = ["dick","cock","pussy","testword","the"];
+    var badWords = ["dick","cock","pussy","testword","Dick","Cock","fuck","Fuck","Pussy"];
 
 
     /*Varnit Edit */
     var status=document.getElementsByClassName("_1mwp navigationFocus _395 _1mwq _4c_p _5bu_ _17nh _34nd _21mu _5yk1");
     
-    if(status.length>1){
+    if(status.length>0){
         var statusContent = status[0]['innerText'];   
-        alert(statusContent)        //This displays the status, we have to implement NLTK on this, working on this
-                                    //Cant get python to work
+        alert(statusContent)        //This displays the status, we have to implement NLTK on this, working on this                                    //Cant get python to work
     }
 
     var allposts = document.getElementsByClassName("_5pbx userContent _3576");
@@ -27,8 +28,11 @@ function DOMtoString(document_root) {
     for(i=0;i<allposts.length;i++){
 
         var inner=allposts[i].getElementsByTagName("p");  //Get each post
+
+        console.log(inner.length);
         console.log(inner[0]["innerText"]);  //Displays the post content
         var text = inner[0]["innerText"];
+
 
         var flag=0;
 
@@ -67,7 +71,7 @@ function DOMtoString(document_root) {
     var word=new String('Boss');
     var comm=document.getElementsByClassName("UFICommentBody");
     //alert(comm.length)
-    console.log('length='+comm.length)
+    //console.log('length='+comm.length)
     var xt=new Array()
     var x;
     //alert(comm.length)
@@ -75,7 +79,7 @@ function DOMtoString(document_root) {
         {
 
             var tt=comm[x].getElementsByTagName("span");
-            console.log('length of span ='+tt.length)
+            //console.log('length of span ='+tt.length)
             if(tt.length>0)
                 {
                     var i;
@@ -83,7 +87,7 @@ function DOMtoString(document_root) {
                         {
                             tmp=new String(tt[i].innerHTML);
                             //xt.push(tmp);
-                            console.log('i = '+i+' word='+tmp);
+                            //console.log('i = '+i+' word='+tmp);
                         
                             var flag2=0;
 
@@ -107,7 +111,8 @@ function DOMtoString(document_root) {
                             }   
                         
                             if (flag2==1){
-                                tt[i].parentNode.style.visibility='hidden';
+                                //tt[i].innerHTML=tmp.fontcolor('red');
+                                tt[i].style.visibility='hidden';
                             }
                         
 

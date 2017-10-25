@@ -1,18 +1,26 @@
 {
   "name": "FixBook",
-  "version": "0.0",
-  "manifest_version": 1,
+  "version": "1.0",
+  "manifest_version": 2,
   "description": "Provide security nudges and hide malicious content on facebook",
   "browser_action": {
     "default_popup": "popup.html"
   },
-    /*
-    "content_scripts": [
-    {
-      "matches": ["http://*.google.com/*", "http://*.facebook.com/*"],
-      "js": ["change.js"],
-      "all_frames": true
-    }],
-    */
   "permissions": ["tabs", "<all_urls>"]
 }
+
+
+
+// "content_security_policy": "script-src 'self' https://cdn.firebase.com https://*.firebaseio.com; object-src 'self'"
+//   ,
+
+    
+//     "content_scripts": [
+//     {
+//       "matches": ["http://*.google.com/*", "http://*.facebook.com/*"],
+//       "js": ["change.js"],
+//       "all_frames": true
+//     }],
+    
+  
+//   

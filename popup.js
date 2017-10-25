@@ -39,7 +39,7 @@ function onWindowLoad() {
       message.innerText = 'There was an error injecting script : \n' + chrome.runtime.lastError.message;
     }
   });
-    alert(message);
+    //alert(message);
 
 }
 

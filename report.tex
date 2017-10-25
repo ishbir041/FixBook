@@ -1,0 +1,204 @@
+
+\documentclass[conference]{IEEEtran}
+\usepackage{blindtext, graphicx, float}
+
+\ifCLASSINFOpdf
+\else
+\fi
+
+
+
+% correct bad hyphenation here
+\hyphenation{op-tical net-works semi-conduc-tor}
+
+
+\begin{document}
+%
+% paper title
+% can use linebreaks \\ within to get better formatting as desired
+\title{Internet Of Things}
+
+
+% author names and affiliations
+% use a multiple column layout for up to three different
+% affiliations
+\author{\IEEEauthorblockN{}
+\IEEEauthorblockA{}
+\and
+\IEEEauthorblockN{Varnit Jain}
+\IEEEauthorblockA{Indraprastha Institute of Information Technology\\
+Delhi, India\\
+Email: varnit15112@iiitd.ac.in}
+\and
+\IEEEauthorblockN{}
+\IEEEauthorblockA{}
+}
+
+
+% make the title area
+\maketitle
+
+
+\begin{abstract}
+%\boldmath
+Ubiquitous sensors, internet, radio frequency communication all bundled together create the backbone for Wireless Sensor Networks (WSN). These networks allow us to measure, infer and understand our natural habitat. We can use use networks to create devices that act as access points to the virtual world. These technologies also known as the 'Internet of Things' enable us to transform real world object into intelligent virtual objects.\newline
+This report talks about the various aspects of the technology: it's origin, how it has scaled, the major reasons for scaling, the technologies involved and it's current and future applications.
+\end{abstract}
+% IEEEtran.cls defaults to using nonbold math in the Abstract.
+% This preserves the distinction between vectors and scalars. However,
+% if the journal you are submitting to favors bold math in the abstract,
+% then you can use LaTeX's standard command \boldmath at the very start
+% of the abstract to achieve this. Many IEEE journals frown on math
+% in the abstract anyway.
+
+% Note that keywords are not normally used for peerreview papers.
+\begin{IEEEkeywords}
+IoT, Internet, Smart Devices, Smart City, RFID, IPv6, Bluetooth, Wi-fi, Sensors.
+\end{IEEEkeywords}
+
+
+% For peer review papers, you can put extra information on the cover
+% page as needed:
+% \ifCLASSOPTIONpeerreview
+% \begin{center} \bfseries EDICS Category: 3-BBND \end{center}
+% \fi
+%
+% For peerreview papers, this IEEEtran command inserts a page break and
+% creates the second title. It will be ignored for other modes.
+\IEEEpeerreviewmaketitle
+
+
+
+\section{Introduction}
+\blindtext
+“In a few decades time, computers will be interwoven into almost every industrial product”, this statement was given in 1966 by Karl Steinbuch, a German computer scientist. Even then he could see the potential of computing systems and how they will be an integral part of the industry. Perhaps, what he didn't realise at that point of time was that computers wouldn’t limit themselves to the industry but will become an intrinsic part of our lives. \\
+The term ‘Internet of Things’ was first coined by Kevin Ashton in 1999 with respect to supply chain management [1]. However, the term now refers to a variety of products connected to a network and exchanging data. These include our cell phones (connected to the network provider), smart watches (connected to the wifi), TVs (connected to the wifi), manufacturing systems (communicating for product development), agricultural systems (reading weather and humidity reports and responding accordingly), and much more. The exponential growth in this technology is due to the diminishing size of sensors, processors, communication modules; a fall in their prices; and the reduction in their energy consumption. Due to these advances, physical items are now connected to the virtual world which enable us to control and access Internet services. 
+
+
+\section{Technology}
+Internet of Things is one of the most promising and upcoming technologies as seen by Gartner’s IT Hype Cycle (figure 1) posted in 2012 [2]. We can see the advent of IOT devices in our day to day lives and from the cycle we can observe that IOT technology can be expected to boom in next 5 years.[5]
+
+
+
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.5\textwidth]{img1.png}
+% where an .eps filenam suffix will be assumed under latex, 
+% and a .pdf suffix will be assumed for pdflatex; or what has been declared
+% via \DeclareGraphicsExtensions.
+\caption{Gartners  IT  Hype  Cycle}
+\label{fig_sim}
+\end{figure}
+
+\subsection{Sensors and Radio}
+The technologies involved in IOT help bridge the gap between the physical and virtual world. RFID (Radio Frequency IDentification), NFC (Near Field Communication) and barcodes help identify passive objects- which do not have built-in energy sources; which use the reader’s signal to communicate their unique ID to their reader.  Wireless Sensor Networks (WSN) are small sensor networks which are needed to input sensor values to these IOT devices, which has been possible due to development of low cost, low power integrated circuits. WiFi (Wireless Fidelity) and Bluetooth technologies let devices communicate wirelessly making enabled IOT devices handy and usable. 
+\subsection{Addressing Scheme and Cloud}
+Since the number of IOT devices are reaching billions, we need a standardized system of addressing all of these devices. This need introduced the IPv6 which has 128 bit IP address (unique number which identifies a device). IP enables us to use the existing internet architecture to address these smart objects from anywhere. With such huge amounts of data being collected and transferred, we need some secure and easily accessible place to store this data. Since 2010, cloud-based storage solutions are gaining popularity because they not only solve the two above mentioned problems but also enable cloud-based analytics and computing which further escalate growth.
+
+\subsection{Web of Things}
+In recent years, a new technology called ‘Web of Things’ [3] has been established which uses HTTP commands like PUT, PUSH and GET to communicate with smart objects. This enables user to communicate dynamically with IOT devices in a friendly manner through their web browsers. 
+
+
+\section{Technical Challenges}
+Any new technology with makes our life easier also brings many problems along with it. Some of the most concerning challenges are:\\
+1. \textbf{Security and Privacy}: The data collected by the sensors present in the devices can be a cause of concern for both individuals and businesses. There can be misuse of data by the companies manufacturing the device or by third parties with whom the company shares the data. The confidentiality of the communication, authentication and integrity of messages are other issues.\\\\
+2. \textbf{Scalability}: The present IOT technology works well in a local environment but for it to be globally accepted and change the face of computing, it needs to work in large-scale interconnected networks as well.\\\\
+3. \textbf{Data Interpretation}: The interpretation of the context in a particular situation should be as precise as possible to achieve best results. This should be a major challenge as it this requires major advances in artificial intelligence and machine learning technology.\\\\
+4. \textbf{Wireless communications}: WiFi and Bluetooth are not feasible to set up IOT devices in a large-scale establishment as they are not energy efficient. Although there are new energy efficient technologies such as NFC and ZigBee but they have short bandwidth which is insufficient to satisfy the needs of a large network.[6] 
+
+
+\section{Applications}
+The importance of this technology is primarily justified by its wide variety of applications. Many personal items have extended their utility manifold due to their connectivity with home devices. For example, mobile phones can be used to control lights, fans, TVs, etc. Personal watches, either connected to the router with Wifi or via Bluetooth to your phone provide a variety of uses such as calling, alarm, notifications, etc. Many agricultural processes are now controlled by IOT elements. For example, sensors detect the humidity in air and moisture in the soil which in turn sends data to the sprinklers about how much water to dispense. We now use applications like Google Maps which enable us to track traffic in real time allowing us to chose a convenient route. A lot of energy efficient techniques can now be implemented due to the data available to us by the sensors.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.5\textwidth]{img2.png}
+% where an .eps filenam suffix will be assumed under latex, 
+% and a .pdf suffix will be assumed for pdflatex; or what has been declared
+% via \DeclareGraphicsExtensions.
+\caption{Smart Environment Application Domains}
+\label{fig_sim}
+\end{figure}
+
+\section{Smart Cities}
+Smart Cities is a concept which describes a better use of public resources, increasing the quality of services offered to the citizens, while reducing the public administrative cost. The use of Urban IoT would bring a plethora of public services to the citizens, all bundled into one huge interconnected network. This could us expand potential synergies and bring about more transparency in the governance. 
+\subsection{Concepts and Services}
+The smart city market is valued at hundreds of billions of dollars with an annual expenditure of about 16 billion dollars. A roadblock to the smart city dream is attribution of power to different stakeholders of the society highlighting the need for a separate body of governance committed to the planning, execution and management of this idea. Another major setback is due to the financial constraints and the lack of the willingness of investors to support government initiatives for public welfare.[4] \\\\
+1. \textbf{Structural Health of Buildings}: Maintenance of historical sites requires constant monitoring and care, this can be done using various sensors at the weak/integral points of the building. This can be combined with various seismic readings to ensure that these structures repaired whenever necessary.\\\\
+2. \textbf{Waste Management}: Intelligent waste management systems will have both economical and ecological gains. For example, intelligent waste containers would ensure optimized collector truck routes hence reducing time and cost spent. \\\\
+3. \textbf{Air Quality}: Pollution sensors can be deployed all over the city which would enable us to identify areas of traffic congestion and region where the factories and industries are not adhering to the pollution laws.\\\\
+4. \textbf{Noise Monitoring}: Acoustic pollution such as CO can be tracked to identify the  individuals/industries are not adhering to the noise pollution laws, i.e., loud noises after certain hours. It can also give police information about clashes or brawls. \\\\
+5. \textbf{Traffic Congestion}: Real time traffic can be monitored using GPS and cameras at various intersections. This would help traffic police officials to regulate traffic conditions and ensure smooth vehicular movement.\\\\
+6. \textbf{Smart Parking}: Smart parking technology would allow citizens to know their closest parking spot, it would prevent illegal road parking and would be very convenient for citizens.\\\\
+7. \textbf{Smart Lighting}: Sensors present in street lighting can be used to determine the level of activity in that place, weather conditions and time of the day. This information can be used to control the intensity of lighting and hence, save a lot of energy. 
+
+\subsection{Urban IoT Architecture}
+Smart Cities are based on a centralized architecture which is a combination of smaller subnetworks regulating each aspect of the smart city. These small networks collect data and store it in a central location where this data is processed for inference and is forwarded to other subnetworks. A primary characteristic of IoT is its ability to combine different subnetworks and technologies using existing communication channels to provide an integrated solution. Another important aspect of this technology is that it increases the availability of this data to the citizens and authorities which then ensures quick action by authorities in case of any emergency and greater transparency in governance.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.5\textwidth]{img3.png}
+% where an .eps filenam suffix will be assumed under latex, 
+% and a .pdf suffix will be assumed for pdflatex; or what has been declared
+% via \DeclareGraphicsExtensions.
+\caption{Urban IoT Network}
+\label{fig_sim}
+\end{figure}
+
+The given image shows a conceptual representation of an IoT architecture, it has a centralized control centre, individual IoT subnets, cloud servers, etc. Web service provide a unique feature known as Representation State Transfer (REST) paradigm. IoT devices build upon these services are very similar to the web services and hence can be adopted with ease by both users and web services. 
+
+
+\section{Research Directions for Future}
+1. \textbf{Security and Privacy}: Any large network which makes our life easier also comes with its share of problems. One of the most dominant issues are related to the security and privacy of the users and data collected from them. Radio technology is quite vulnerable to security attacks, so, data transmitted over it has to be encrypted and decryption algorithms need to be deployed at the physical ends to interpret the data. Data encryption and message authentication provide security against outsider attacks but not against any attack by an insider. The sensors and systems need to be updated frequently and so that attacks can be prevented. Hence, a secure programming protocol should be used so that is authenticates all code updates and make sure no malicious outgoing data stream remains. \\
+Implementing secure cloud platforms is another major challenge which requires a lot of research. Data leaks in any format by users or devices pose big security risks to both individuals and businesses. Sensitive client information leak can lead to a company’s demise and personal information leak can lead to cyberbullying, harassment and stalking. We need to ensure secure online systems to prevent cyber attacks of all forms and have strict cyber laws protecting our privacy rights.\\\\
+2. \textbf{Architecture}: The most cost effective architecture that can be followed by companies and individuals is user-centric cloud computing based IOT technology. User should be the major focus of this architecture allowing the use of his personal data for improvement of application accuracy. For domains like military, national security and defense, human intelligence is crucial as the safety of the whole nation can’t be trusted in the hands of a machine. Thus, such IOT architecture cannot be implemented.\\\\
+3. \textbf{Data mining}: The fields of machine learning and artificial intelligence need to be developed to extract useful information from different types of situations. This information should be used to study the response of IOT devices in various scenarios and according to the results, they should be modified to respond more accurately. Events of varying complexity should be studied to learn the adaptability of the devices in new situations.[7]
+
+\section{Conclusion}
+IoT has the potential to make our lives simpler and more convenient through applications in various domains such as agriculture, education, energy, transport, finance, healthcare, etc. In recent years, machine learning and artificial intelligence have played a major role in the development and deployment of these IoT devices. They enable these technologies to learn from human behaviour, different situations and adapt to them. 
+Some of the more ambitious goals in this technology is extending the IOT concept to develop smart cities. Though the future of IoT looks very promising, there are a lot of challenges that need to be overcome to make it a revolution.
+
+
+% Can use something like this to put references on a page
+% by themselves when using endfloat and the captionsoff option.
+\ifCLASSOPTIONcaptionsoff
+  \newpage
+\fi
+
+\begin{thebibliography}{1}
+
+
+\bibitem{smart:ashton}
+K. Ashton, That ―Internet of Things‖ Thing, RFiD Journal. (2009).
+
+\bibitem{smart:hcycle}
+Gartner's Hype Cycle Special Report for 2011, Gartner Inc. \emph{http://www.gartner.com/technology/research/hype-cycles} /2012 .
+
+\bibitem{smart:web of things}
+Guinard, D., Trifa, V., Wilde, E.: Architecting a Mashable Open World Wide Web of Things. TR CS-663 ETH Zürich,
+\emph{www.vs.inf.ethz.ch/publ/papers/WoT.pdf},& 2010
+
+
+
+
+
+\bibitem{smart:madakam}
+Andrea Zanella, Nicola Bui,Angelo Castellani,Lorenzo Vangelista, and Michele Zorzi, \emph{Internet of Things for Smart Cities},& 2014.
+\bibitem{literature:madakam}
+Somayya Madakam, R. Ramaswamy,and Siddharth Tripathi, \emph{Internet of Things (IoT): A Literature Review},& 2015.
+\bibitem{computers:mattern}
+Friedemann Mattern and Christian Floerkemeier, \emph{From the Internet of Computers to the Internet of Things},& 2010.
+\bibitem{vision:gubbi}
+Jayavardhana Gubbi, Rajkumar Buyya, Slaven Marusic,and Marimuthu Palaniswami, \emph{Internet of Things (IoT): A Vision, Architectural Elements, and Future Directions},& 2013.
+\end{thebibliography}
+
+\begin{IEEEbiography}[{\includegraphics[width=1in,height=1.25in,clip,keepaspectratio]{picture}}]{John Doe}
+\blindtext
+\end{IEEEbiography}
+
+
+% that's all folks
+\end{document}
+
+
