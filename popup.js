@@ -6,6 +6,7 @@ chrome.runtime.onMessage.addListener(function(request, sender) {
 
 function onWindowLoad() {
     var message = document.querySelector('#message');
+    var message = document.querySelector('#message');
     /*
     var tmp;
     var word=new String('Martial');
