@@ -1,26 +1,26 @@
 {
   "name": "FixBook",
-  "version": "1.0",
+  "version": "2.0",
   "manifest_version": 2,
-  "description": "Provide security nudges and hide malicious content on facebook",
+  "description": "Get pages source from a popup",
   "browser_action": {
     "default_popup": "popup.html"
   },
-  "permissions": ["tabs", "<all_urls>"]
+    "icons": { "16": "icon16.png",
+           "48": "icon48.png",
+          "128": "icon128.png" },
+    
+    "content_scripts": [
+    {
+      "matches": ["http://*.google.com/*", "https://*.facebook.com/*"],
+      "js": ["jquery-3.2.1.min.js","change.js","firebase.js","jquery-3.0.0.min.js"],
+      "all_frames": false,
+      "run_at":"document_idle"
+    }],
+    "web_accessible_resources":["test.js","test2.js","test3.js","popup.js"],
+ 
+ "background": { "scripts": ["trackStatus.js"] },
+ "permissions": ["storage" , "tabs", "<all_urls>","identity","webNavigation", "*://*/*"],
+ "content_security_policy": "script-src 'self' 'unsafe-inline' https://cdn.firebase.com https://*.firebaseio.com; object-src 'self'"
+
 }
-
-
-
-// "content_security_policy": "script-src 'self' https://cdn.firebase.com https://*.firebaseio.com; object-src 'self'"
-//   ,
-
-    
-//     "content_scripts": [
-//     {
-//       "matches": ["http://*.google.com/*", "http://*.facebook.com/*"],
-//       "js": ["change.js"],
-//       "all_frames": true
-//     }],
-    
-  
-//   
